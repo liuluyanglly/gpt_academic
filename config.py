@@ -12,7 +12,7 @@ API_KEY = "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"    # 可同时�
 
 
 # [step 2]>> 改为True应用代理，如果直接在海外服务器部署，此处不修改
-USE_PROXY = True
+USE_PROXY = False
 if USE_PROXY:
     """
     填写格式是 [协议]://  [地址] :[端口]，填写之前不要忘记把USE_PROXY改成True，如果直接在海外服务器部署，此处不修改
@@ -24,8 +24,8 @@ if USE_PROXY:
     # 代理网络的地址，打开你的*学*网软件查看代理的协议(socks5h / http)、地址(localhost)和端口(11284)
     proxies = {
         #          [协议]://  [地址]  :[端口]
-        # "http":  "socks5h://localhost:11284",  # 再例如  "http":  "http://127.0.0.1:7890",
-        "https": "https://workers2.xr21.me",  # 再例如  "https": "http://127.0.0.1:7890",
+        "http":  "socks5h://localhost:11284",  # 再例如  "http":  "http://127.0.0.1:7890",
+        "https": "socks5h://localhost:11284",  # 再例如  "https": "http://127.0.0.1:7890",
     }
 else:
     proxies = None
