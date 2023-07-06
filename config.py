@@ -25,8 +25,7 @@ if USE_PROXY:
     proxies = {
         #          [协议]://  [地址]  :[端口]
         "http":  "socks5h://localhost:11284",  # 再例如  "http":  "http://127.0.0.1:7890",
-        "https": "socks5h://localhost:11284",  # 再例如  "https": "http://127.0.0.1:7890",
-        "https://workers2.xr21.me"
+        "https": "https://workers2.xr21.me",  # 再例如  "https": "http://127.0.0.1:7890",
     }
 else:
     proxies = None
