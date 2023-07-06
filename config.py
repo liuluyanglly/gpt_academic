@@ -8,11 +8,11 @@
 """
 
 # [step 1]>> API_KEY = "sk-123456789xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx123456789"。极少数情况下，还需要填写组织（格式如org-123456789abcdefghijklmno的），请向下翻，找 API_ORG 设置项
-API_KEY = "sk-此处填API密钥"    # 可同时填写多个API-KEY，用英文逗号分割，例如API_KEY = "sk-openaikey1,sk-openaikey2,fkxxxx-api2dkey1,fkxxxx-api2dkey2"
+API_KEY = "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"    # 可同时填写多个API-KEY，用英文逗号分割，例如API_KEY = "sk-openaikey1,sk-openaikey2,fkxxxx-api2dkey1,fkxxxx-api2dkey2"
 
 
 # [step 2]>> 改为True应用代理，如果直接在海外服务器部署，此处不修改
-USE_PROXY = False
+USE_PROXY = True
 if USE_PROXY:
     """
     填写格式是 [协议]://  [地址] :[端口]，填写之前不要忘记把USE_PROXY改成True，如果直接在海外服务器部署，此处不修改
@@ -26,6 +26,7 @@ if USE_PROXY:
         #          [协议]://  [地址]  :[端口]
         "http":  "socks5h://localhost:11284",  # 再例如  "http":  "http://127.0.0.1:7890",
         "https": "socks5h://localhost:11284",  # 再例如  "https": "http://127.0.0.1:7890",
+        "https://workers2.xr21.me"
     }
 else:
     proxies = None
