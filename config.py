@@ -8,7 +8,7 @@
 """
 
 # [step 1]>> API_KEY = "sk-123456789xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx123456789"。极少数情况下，还需要填写组织（格式如org-123456789abcdefghijklmno的），请向下翻，找 API_ORG 设置项
-API_KEY = "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"    # 可同时填写多个API-KEY，用英文逗号分割，例如API_KEY = "sk-openaikey1,sk-openaikey2,fkxxxx-api2dkey1,fkxxxx-api2dkey2"
+API_KEY = "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"    # 可同时填写多个API-KEY，用英文逗号分割，例如API_KEY = "sk-openaikey1,sk-openaikey2,fkxxxx-api2dkey1,fkxxxx-api2dkey2"
 
 
 # [step 2]>> 改为True应用代理，如果直接在海外服务器部署，此处不修改
