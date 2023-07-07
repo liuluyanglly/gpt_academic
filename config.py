@@ -8,7 +8,7 @@
 """
 
 # [step 1]>> API_KEY = "sk-123456789xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx123456789"。极少数情况下，还需要填写组织（格式如org-123456789abcdefghijklmno的），请向下翻，找 API_ORG 设置项
-API_KEY = "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"    # 可同时填写多个API-KEY，用英文逗号分割，例如API_KEY = "sk-openaikey1,sk-openaikey2,fkxxxx-api2dkey1,fkxxxx-api2dkey2"
+API_KEY = "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"    # 可同时填写多个API-KEY，用英文逗号分割，例如API_KEY = "sk-openaikey1,sk-openaikey2,fkxxxx-api2dkey1,fkxxxx-api2dkey2"
 
 
 # [step 2]>> 改为True应用代理，如果直接在海外服务器部署，此处不修改
@@ -35,7 +35,7 @@ else:
 # 重新URL重新定向，实现更换API_URL的作用（常规情况下，不要修改!! 高危设置！通过修改此设置，您将把您的API-KEY和对话隐私完全暴露给您设定的中间人！）
 # 格式 API_URL_REDIRECT = {"https://api.openai.com/v1/chat/completions": "在这里填写重定向的api.openai.com的URL"} 
 # 例如 API_URL_REDIRECT = {"https://api.openai.com/v1/chat/completions":"https://free.churchless.tech/v1/chat/completions"}
-API_URL_REDIRECT = {"https://workers3.xr21.me/v1/chat/completions"}
+API_URL_REDIRECT = {"https://api.openai.com/v1/chat/completions":"https://workers3.xr21.me/v1/chat/completions"}
 
 
 # 多线程函数插件中，默认允许多少路线程同时访问OpenAI。Free trial users的限制是每分钟3次，Pay-as-you-go users的限制是每分钟3500次
